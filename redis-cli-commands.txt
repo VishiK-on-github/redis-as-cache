@@ -1,1 +1,52 @@
 Redis Installation:
+sudo apt-get install Redis
+
+Starting Redis server:
+redis-server
+
+Using Redis on CLI:
+redis-cli
+
+Setting Key - Value in Redis (string values by default):
+set <keyname> <value>
+
+Getting value for a key in Redis:
+get <keyname>
+
+Deleting a key - value pair:
+del <keyname>
+
+Check if key exists in cache:
+exists <keyname>
+
+Get all keys in a cache:
+keys *
+
+Clearing up cache:
+flushall
+
+Checking expiration for key:
+ttl <keyname>
+
+Setting expiration for a key:
+expire <keyname> <time in seconds>
+
+Setting expiration while creating key:
+setex <keyname> <time in seconds> <value> 
+
+Creating list in Redis:
+lpush <keyname> <value>
+
+Getting list items:
+lrange <keyname> <start> <stop>
+
+Adding element to the end:
+rpush <key> <value>
+
+Removing element from start of the list:
+lpop <keyname>
+
+Removing element from end of the list:
+rpop <keyname>
+
+
