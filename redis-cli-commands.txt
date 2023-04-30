@@ -49,4 +49,26 @@ lpop <keyname>
 Removing element from end of the list:
 rpop <keyname>
 
+Adding element to a set:
+sadd <keyname> <value>
 
+Listing items in a set:
+smembers <keyname>
+
+Removing item from the set:
+srem <keyname> <value>
+
+Adding hashes:
+hset <keyname> <field> <value>
+
+Getting hash field:
+hget <keyname> <field>
+
+Getting all fields:
+hgetall <keyname>
+
+Deleting a field:
+hdel <keyname> <field>
+
+Check if a field exists:
+hexists <keyname> <field>
